@@ -1,0 +1,23 @@
+/* Home.module.css */
+.slider {
+    margin: 50px auto;
+  }
+  
+  .slider img {
+    width: 100%;
+  }
+  
+  .about {
+    margin: 50px 0;
+    text-align: center;
+  }
+  
+  .about h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 24px;
+  }
+  
