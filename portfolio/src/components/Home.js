@@ -41,6 +41,7 @@ function Home() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
         </nav>
+        
       </div>
       <div className={styles.hero}>
         <h2 className={styles.heroTitle}>Welcome to My Portfolio</h2>
@@ -49,16 +50,8 @@ function Home() {
           elit quis nulla suscipit blandit.
         </p>
       </div>
-      <div className={styles.about} id="about">
-        <h2 className={styles.sectionTitle}>About Me</h2>
-        <p className={styles.sectionText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae
-          elit quis nulla suscipit blandit. Sed malesuada ligula ac tortor
-          faucibus mollis. Integer facilisis orci ac mi sagittis malesuada.
-        </p>
-      </div>
       <div className={styles.projects} id="projects">
-        <h2 className={styles.sectionTitle}>Projects</h2>
+        <h2 className={`${styles.sectionTitle} ${styles.bounce}` }>Projects</h2>
         <Slider {...settings} className={styles.slider}>
           <div className={styles.sliderItem}>
             <img src="image1.jpg" alt="Project 1" className={styles.sliderImg} />
@@ -73,6 +66,14 @@ function Home() {
             <h3 className={styles.sliderCaption}>Project 3</h3>
           </div>
         </Slider>
+      </div>
+      <div className={styles.about} id="about">
+        <h2 className={styles.sectionTitle}>About Me</h2>
+        <p className={styles.sectionText}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae
+          elit quis nulla suscipit blandit. Sed malesuada ligula ac tortor
+          faucibus mollis. Integer facilisis orci ac mi sagittis malesuada.
+        </p>
       </div>
     </div>
   );
